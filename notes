@@ -1,0 +1,200 @@
+Possible graph editing frameworks:
+
+Free
+
+
+
+Non-free (We won't use them but they provide sample feature lists
+
+yfiles	http://www.yworks.com/en/products_yfiles_about.html.
+
+
+16:27:30 <aindilis> can anyone recommend a graph/network toolkit for Java, I'm
+      writing a task network browser editor for the POSI todo system
+16:27:34 <aindilis> er, goal system
+16:28:16 <flaushy> graph as graph theory?
+16:28:20 <aindilis> yeah
+16:28:32 <aindilis> http://frdcsa.org/~andrewdo/images/psex.jpg
+16:29:25 <flaushy> to automaticly resolve dependecies?
+16:29:38 <aindilis> um, what it is for is for editing the dependency graph
+16:29:53 <aindilis> I have AI software that takes this, and other information
+      such as timing and scheduling information, and plans everything out
+16:30:09 <aindilis> what is needed is to craft/edit the available goals into a
+      coherent and accurate system
+16:30:17 <aindilis> it's more than just a dependency chart
+16:30:48 <aindilis> http://frdcsa.org/~andrewdo/writings/semweb.pdf
+16:30:56 <flaushy> okie, so more of a datastorage 
+16:30:58 <aindilis> http://frdcsa.org/~andrewdo/writings/flourish-2009.odp
+16:31:05 <aindilis> well I have the data storage written
+16:31:18 <aindilis> It is essentially a predicate store
+16:31:26 <aindilis> called freekbs
+16:31:39 <aindilis> I have the ability to edit it tremendously with emacs
+16:31:56 <aindilis> but that is slow for certain kinds of tasks, in
+      particular, it is hard to visualize the overall graph layout
+16:32:10 <aindilis> so I export using graphviz, but want the ability to edit
+      the graph and to add new items
+16:32:16 <flaushy> hmm okie
+16:32:27 <flaushy> why not use latex for export?
+16:32:36 <aindilis> I need dynamic graph visualization
+16:32:40 <aindilis> it's a multiperson system
+16:32:45 <flaushy> kk
+16:32:49 <aindilis> web applets/stand alone
+16:33:00 <aindilis> someone can add a dependecy and it updates on all clients
+16:33:20 <aindilis> see, someone can enter a goal onto this very channel with
+      the command "Goal: do this"
+16:33:32 <aindilis> the bot asserts it into the knowledge base, and it updates
+16:33:34 <flaushy> yeah kinda figure :)
+16:33:47 <flaushy> distributed database with different views in a way :)
+16:33:50 <aindilis> sure
+16:34:00 <aindilis> :)
+16:34:31 <aindilis> and then when a goal gets done, it get's grewed out, and
+      eventually removed
+16:34:37 <aindilis> my goal is to make it almost like a game
+16:34:50 <flaushy> hmm why as a game?
+16:35:02 <flaushy> to give back good feedback and target the player instinct?
+16:35:09 <aindilis> well because it is designed to be real time
+16:35:22 <aindilis> the system does automatic matching between goals as you
+      assert new ones
+16:35:29 <aindilis> using recognizing textual entailment
+16:35:54 <aindilis> and of course users can declare two or more goals to be
+      related in various ways, such as they are exactly the same, one entails
+      the other, and so on
+16:36:07 #posi> /names
+16:36:07 *** Users on #posi: goibhniu posi-log-bot sYskk dfr|work flaushy
+      en3r0 aindilis posingaspopular 
+16:36:28 <flaushy> hmm okie
+16:36:35 <flaushy> and all that needs to scale as well
+16:36:48 <aindilis> well yeah, I'm not too concerned about scaling at first
+16:37:10 <flaushy> yeah but that is where it makes sense, if others had the
+      same goal, and you can extract that information
+16:37:12 <aindilis> I imagine that among the early tasks will be researching
+      and developing better backends/interfaces
+16:37:55 <aindilis> do you understand about the way the system maps
+      goals/interests/and abilities and uses that to plan for what the users
+      can and possibly should do?
+16:38:12 <flaushy> i read the slides some weeks ago i think
+16:38:25 <aindilis> oh okay, well that was for the verber I'm guessing
+16:38:29 <aindilis> POSI is a multiuser thing
+16:38:42 <flaushy> but to be honest i am not too sure whether i understand
+      correctly
+16:38:45 <flaushy> okie
+16:39:11 <flaushy> (corporate design makes the assumption too easy)
+16:39:19 <aindilis> corporate design?
+16:39:22 <flaushy> will read it completely then, but prolly tomorrow
+16:39:32 <aindilis> oh thanks!
+16:39:39 <flaushy> useing the same design over and over again, so it sticks :)
+16:39:43 <aindilis> now that you have a decent picture of some of the
+      requirements, do you know of any java graph editors?
+16:39:45 <aindilis> ok
+16:40:10 <flaushy> i know we have one, bbut it is to visualize algorithms
+16:40:15 <aindilis> ah okay
+16:40:19 <flaushy> it is very basic
+16:40:26 <aindilis> yeah I would want the emacs of graph editors
+16:40:27 <flaushy> and i fear it is homebrewn
+16:40:28 <aindilis> lol
+16:40:42 <flaushy> actually, i ll ask a prof
+16:40:50 <aindilis> oh thanks!
+16:40:56 <flaushy> we have a math prof, who is specialized in graph theory
+16:41:07 <flaushy> formal concepts etc pp
+16:41:34 <aindilis> well one of the POSI folks probably knows which software
+      to use, but he was unavailable for a long time.  he just reappeared
+      today, but has been catching up on some stuff and hasn't answered the
+      question yet
+16:41:55 <aindilis> and my 3 years of funding is up, I have to fend for myself
+      with my own consultancy
+16:42:03 <aindilis> so I am prioritizing the planning aspects of the POSI
+      system
+16:42:25 <flaushy> yeah
+16:42:29 <aindilis> and hopefully it can help others, especially free software
+      folks, into thriving during the recession and collaborating on free
+      software
+16:42:49 <flaushy> i would need such a tool, for organizing groups
+16:42:55 <aindilis> how so?
+16:43:10 <aindilis> what kind of groups?
+16:43:16 <flaushy> i am in a couple of movements
+16:43:16 <aindilis> (POSI is of course free software)
+16:43:19 <aindilis> oh okay
+16:43:27 <aindilis> flaushy: have you tried RT (request tracker)
+16:43:31 <aindilis> that's pretty handy
+16:43:34 <flaushy> students union i have been quite active
+16:43:43 <flaushy> but the problem is time
+16:43:45 <aindilis> I can give you an account on my instance and you can play
+      around
+16:43:54 <aindilis> well if you really need to, you can just use my server
+16:43:58 <flaushy> not at the moment thanks :)
+16:44:03 <aindilis> you can set up multiple queues
+16:44:04 <aindilis> okay
+16:44:15 <flaushy> thing is, we are lacking manpower
+16:44:20 <aindilis> k
+16:44:26 <flaushy> in all different things at university, you always meet the
+      same guys
+16:44:31 <aindilis> haha
+16:44:34 <aindilis> sorry I KNOW
+16:44:45 <flaushy> so finding "similiar goals" and helping is a huge aspect
+16:44:52 <aindilis> that's why you really have to go online
+16:44:57 <aindilis> and that's what POSI is designed for
+16:45:05 <aindilis> but it's vaporware more or less at this point
+16:45:05 <flaushy> yeah, that is what i had in mind
+16:45:18 <aindilis> well I mean there is a lot of good stuff, but it's not up
+      and running
+16:45:23 <flaushy> more of the aspect of bringing the right ppl together
+16:45:44 <aindilis> hrm, I should put you in touch with a hacker friend of
+      mine, he's kinda scary but he was saying the same thing
+16:45:44 <flaushy> and maybe being able to reuse the solution of a problem of
+      somebody else
+16:46:09 <aindilis> oh absolutely, whenever a task is complete, you log
+      information as to where the solution is stored, what it is ,etc.
+16:46:18 <flaushy> right
+16:46:28 <flaushy> another aspect that comes in, is privacy concerns
+16:46:33 <aindilis> definitely
+16:46:44 <flaushy> because it works good, if it scales and has a certain size
+16:46:57 <aindilis> yeah
+16:47:03 <flaushy> so basicly you are doing yet another groupware, a kinda
+      metagroupware tho
+16:47:09 <aindilis> well, hrm
+16:47:23 <flaushy> well not full groupware, just the task planning 
+16:47:36 <aindilis> yes it is kind of groupware, but it uses AI that most
+      groupware ignores
+16:47:44 <flaushy> right
+16:47:51 <aindilis> and it's based on the theory of software conglomeration,
+      always building larger systems
+16:48:09 <aindilis> but yeah, it's a form of groupware
+16:48:15 <aindilis> with social network analysis
+16:48:19 <flaushy> http://www.wv.inf.tu-dresden.de/ btw :)
+16:48:45 <aindilis> yeah most groupware doesn't use those techniques.
+      obviously more and more they will
+16:48:55 <aindilis> is that your area?
+16:49:07 <flaushy> nope
+16:49:13 <flaushy> one chair
+16:49:16 <flaushy> http://awv.inf.tu-dresden.de/Research/
+16:49:20 <flaushy> that is another one
+16:49:35 <flaushy> even tho, too applied for many in our field
+16:50:12 <aindilis> oh
+16:50:13 <flaushy> what i am thinking of is, who to contact for such things
+16:50:31 <aindilis> please elaborate, what such things
+16:51:05 <flaushy> well in which area your project falls, who might have the
+      most information that could prove helpful
+16:51:10 <aindilis> oh okay
+16:51:24 <aindilis> thanks!
+16:52:11 <flaushy> based on that i would ask students from the chairs
+16:52:55 <flaushy> but i am thinking about it, whether it could be seen as a
+      game and could be a problem being solved by the general game playing
+      group
+16:52:59 <aindilis> okay
+16:53:07 <aindilis> well, I don't think so
+16:53:21 <aindilis> because the world model is underspecified
+16:53:30 <aindilis> but yeah, I guess it could be in many ways
+16:53:59 <flaushy> http://www.fluxagent.org/ is the research project of
+      another chair
+16:54:43 <flaushy> well, what i am thinking of is that it would be cool, if
+      you could simulate some stuff
+16:54:59 <aindilis> oh okay
+16:55:16 <flaushy> you know, you are a helper, and the question would be,
+      where to help with minimal effort, to get maximum result
+16:55:46 <aindilis> ah okay
+17:01:53 <flaushy> btw, quick googling brings up JUNG and GEF (from tigris)
+17:01:58 <aindilis> ah
+17:02:02 <aindilis> hadn't seen GEF
+17:02:32 <flaushy> http://gef.tigris.org/
+17:07:30 <flaushy> night night
+17:09:36 <aindilis> gnite!

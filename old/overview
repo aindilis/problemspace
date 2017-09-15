@@ -1,0 +1,29 @@
+Use problemspace or some such thing to report
+
+
+ProblemSpace is a system that provides some functionality that other
+systems do provide.
+
+Here are key features of battlespace.
+
+Problemspace functions as a command post for the AI force.
+
+AI force monitors goals and their dependencies.
+
+It also  is responsible  for delegating authority  to others  based on
+mixed  initiative.   It  uses  automated  techniques  to  monitor  the
+progress of varoius people on various projects.
+
+I  think I  will use  Java code  for this,  because it  is what  AI is
+largely done in.
+
+We can  use Java graph  layout algorithms.  Also,  there are a  lot of
+Java programmers.
+
+Colored icons are used to represent the resources of all commanders.
+
+Mike has suggested that we have cool progress bars showing the work on
+projects.  This would not be hard to achieve.  You could also use a
+gantt chart.  You might have a sliding window that dynamically
+displays both schedules in a gantt format, but also overlays plans and
+estimated completion times, etc.

@@ -1,0 +1,130 @@
+<system>
+  <title>
+    ProblemSpace
+  </title>
+  <acronym-expansion>
+    ProblemSpace
+  </acronym-expansion>
+  <slogan>
+    Whose Problems Are You Solving Today 
+  </slogan>
+  <short-description>
+    Operations management real-time strategy system
+  </short-description>
+  <medium-description>
+    Problems need not  be complex.  Very often the  cause of a problem
+    is clear.  ProblemSpace is  a system that visualizes problems, and
+    lets  problem-solving  tactitians  make  decisions  that  lead  to
+    results for  everyone involved.  ProblemSpace  is a C2  system for
+    problem-solving  tacticians.   It   is  an  interface  to  augment
+    analysts  with relevant  intelligence and  provide  Mutual Assured
+    Security (MAS).  It provides roughly  a real time strategy view of
+    executing operations, and also manages the planning of operations.
+  </medium-description>
+  <long-description>
+    <p>
+      One technique under consideration  is using Alice and the Sammon
+      mapping  to procure  a  visualization of  the  problem space  as
+      exported by various  systems.  In this way we  wish to visualize
+      who is accomplishing what task.
+    </p>
+    <p>
+      At  the technical  level, there  is a  major  component gimmick,
+      integrating  Emacs cyc-mode  with UniLang  monitoring  and CLEAR
+      user knowledge models results  in a high-level symbolic VR (that
+      is not  physically based) to provide an  abstract and contingent
+      knowledge manipulation and  execution monitoring environment for
+      FRDCSA  analysts.   Using  the  popular Matrix  interface  is  a
+      natural start for this project.
+    </p>
+    <p>
+      I wrote this Emacs code (in 2 hours by copying and making small
+      changes to zone.el) primarily for a few reasons:
+      <ul>
+	<li>The Matrix science fiction world is very popular and I'm
+	hoping to increase interest in the FRDCSA.</li>
+	<li>By association we quickly convey many of the definite
+	parallels between Matrix concepts and our project - for
+	instance the similarity between the SVRE and the
+	Construct.</li>
+	<li>The SVRE requires a powerful interface within Emacs and
+	this is a natural starting point.</li>
+      </ul>
+    </p>
+    <p>
+      Note that the streaming texts are actually OpenCyc axioms judged
+      relevant  by  Audience  to  the operator/analyst  and  summarize
+      events,  including inferences drawn  from sensor  data.  Sensors
+      generally mean subsystems such as a SLAM vision based navigation
+      system, a  face recognition system, voice  recognition, etc.  In
+      that  sense this  is extremely  similar to  the  original Matrix
+      visualization   in  terms   of  their   correspondence   to  the
+      environment.
+    </p>
+    <p>
+      So, for instance here are some examples of situations and
+      plausible content.
+      <table>
+	<tr>
+	  <td>
+	    You left a given room and VSLAM detected this.
+	  </td>
+	  <td>
+	    (#$departed #$AndrewDougherty #$Wean-4326)
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    You left your computer and the face recognizer noticed
+	    your face was no longer in field of view.
+	  </td>
+	  <td>
+	    (#$leftFOV #$WebCamera1280 #$AndrewDougherty)
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    You said something into your microphone.
+	  </td>
+	  <td>
+	    (#$speechAct #$AndrewDougherty "Where are my cable ties?")
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    While spidering, RADAR and Architect discovered a system
+	    that implements important capabilities.
+	  </td>
+	  <td>
+	    (#$located #$Radar (#$softwareSystemFn "scene"))
+	  </td>
+	</tr>
+      </table>      
+    </p>
+    <p>
+      Of course, the  real fun begins when we  establish P2P knowledge
+      sharing  networks  over  channels  like encrypted  IM,  allowing
+      communication.  When integration is  further made to our goaling
+      system,  the  result  is   quite  usable.   Integrated  with  an
+      augmented reality  wearable computer system or even  just a cell
+      phone, the  results are quite  staggering.  Like a  stock ticker
+      except about arbitrary concepts and events.
+    </p>
+    <p>
+      However, there is also  an execution component, via the cyc-mode
+      Emacs major  mode, which allows the user  to control interaction
+      with CycL in the Emacs  environment.  This is very powerful from
+      a power  user / knowledge representation point  of view, because
+      Emacs is basically the  world's most advanced symbolic knowledge
+      manipulation  environment.  This interface  allows the  users to
+      manipulate onscreen information  and events using commands bound
+      to key sequences.
+    </p>
+    <p>
+      We also apply CLEAR eyetracking to visually track which axioms
+      the user is viewing in order to behave contingently.  So for
+      instance if the user looks at a particular item longer, it could
+      possibly expand the context for that item.
+    </p>
+  </long-description>
+</system>

@@ -1,0 +1,21 @@
+;; Object problemspace/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "problemspace/"
+  :tables (list 
+   (semanticdb-table "problemspace.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("timer" include nil nil [1070 1086]) ("tabify" include nil nil [1087 1104]) ("cl" include nil nil [1124 1137]) ("ps-max-rate" variable (:default-value 30.0) nil [1140 1201]) ("ps-min-rate" variable (:default-value 10.0) nil [1203 1266]) ("ps-denominator" variable (:default-value 10.0) nil [1268 1382]) ("ps-loop-delay" variable (:default-value 0.3) nil [1384 1447]) ("ps-cleanup-mode" variable (:default-value t) nil [1449 1511]) ("ps-running-p" variable nil nil [1513 1579]) ("ps-array-queue" variable nil nil [1581 1636]) ("ps-message-queue" variable nil nil [1638 1695]) ("ps-specs" variable nil nil [1697 1734]) ("setq" code nil nil [1736 1757]) ("setq" code nil nil [1758 1778]) ("setq" code nil nil [1779 1805]) ("setq" code nil nil [1806 1832]) ("setq" code nil nil [1833 1857]) ("setq" code nil nil [1858 1881]) ("setq" code nil nil [1882 1909]) ("ps-idle" variable (:user-visible-flag t :default-value 20) nil [1911 1980]) ("ps-programs" variable (:default-value [ps-display-matrix]) nil [2375 2431]) ("ps-orig" function (:arguments ("&rest" "body")) nil [2433 2531]) ("problemspace" function (:user-visible-flag t) nil [2548 4631]) ("ps-load-music" function nil nil [4633 4760]) ("ps-when-idle" function (:user-visible-flag t :arguments ("secs")) nil [4800 5134]) ("ps-stop" function nil nil [5136 5234]) ("ps-display-matrix" function nil nil [5236 5353]) ("ps-start-matrix" function (:arguments ("&optional" "random-style")) nil [5355 6887]) ("ps-queued" function (:arguments ("pos")) nil [6889 7066]) ("ps-get-from-queue" function (:arguments ("pos" "len")) nil [7068 7459]) ("ps-slow-down" function (:arguments ("cnt" "amt" "seed")) nil [7461 8040]) ("ps-leave-me-alone" function (:user-visible-flag t) nil [8042 8285]) ("ps-line-specs" function nil nil [8287 8740]) ("ps-set-colors" function (:user-visible-flag t) nil [9304 9442]) ("ps-unset-colors" function (:user-visible-flag t) nil [9444 9624]) ("ps-queue-message-old" function (:arguments ("contents")) nil [9626 9962]) ("ps-queue-message" function (:arguments ("contents")) nil [9964 10162]) ("ps-verify-ps-is-running" function nil nil [10164 10392]) ("ps-change-speed-of-line" function (:arguments ("line" "speed")) nil [10394 10467]) ("problemspace" package nil nil [10469 10492]))
+    :file "problemspace.el"
+    :pointmax 10524
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "backup.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 'nil
+    :file "backup.el"
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0beta3"
+  :semanticdb-version "2.0beta3"
+  )
